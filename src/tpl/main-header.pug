@@ -18,18 +18,18 @@ mixin dataRow
       .tool-bar.pull-right
         a(href="#") partner with us
         .divider |
-        +iconImg('user')
+        +icon('user')
         a.mlm(href="#") Login
         .divider |
-        +iconImg('country')
+        +icon('country')
         a.mlm(href="#") USD
         .divider |
-        +iconImg('lang')
+        +icon('language')
         a.mlm(href="#") EN
         .divider |
         a(href="#") Q&a
         button.mlm.no-bb(type="button" class="search-btn")
-          +iconImg('search')
+          +icon('search')
   .banner-bar
     img.banner(src="assets/pic/header.png")
     .lb1
@@ -37,8 +37,8 @@ mixin dataRow
         .course-search-card.bg1.pull-right
           form.search-wrapper
             input.input(type="text" placeholder="Course Name...")
-            button.icon.no-bb
-              +iconImg('arrow-right')
+            button.btn-icon.no-bb
+              +icon('arrow-right')
           .data-rows-wrapper
             .data-rows
               +dataRow

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Borocol</title>
-    <!-- Bootstrap-->
+    <!-- libraries-->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="../node_modules/css-spacing/css/css-spacing.css " rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+    <link href="https://file.myfontastic.com/DhuomFVWA52VBraDyGBsZ/icons.css" rel="stylesheet">
     <link href="assets/css/common.css" rel="stylesheet">
     <link href="assets/css/home.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
@@ -23,11 +25,11 @@
         <div class="brand-bar">
           <div class="brand"><img src="assets/img/brand.png"></div>
           <div class="tool-bar pull-right"><a href="#">partner with us</a>
-            <div class="divider">|</div><img src="assets/img/icon-user.png"/><a class="mlm" href="#">Login</a>
-            <div class="divider">|</div><img src="assets/img/icon-country.png"/><a class="mlm" href="#">USD</a>
-            <div class="divider">|</div><img src="assets/img/icon-lang.png"/><a class="mlm" href="#">EN</a>
+            <div class="divider">|</div><span class="icon icon-user"></span><a class="mlm" href="#">Login</a>
+            <div class="divider">|</div><span class="icon icon-country"></span><a class="mlm" href="#">USD</a>
+            <div class="divider">|</div><span class="icon icon-language"></span><a class="mlm" href="#">EN</a>
             <div class="divider">|</div><a href="#">Q&a</a>
-            <button class="mlm no-bb search-btn" type="button"><img src="assets/img/icon-search.png"/>
+            <button class="mlm no-bb search-btn" type="button"><span class="icon icon-search"></span>
             </button>
           </div>
         </div>
@@ -38,7 +40,7 @@
             <div class="course-search-card bg1 pull-right">
               <form class="search-wrapper">
                 <input class="input" type="text" placeholder="Course Name...">
-                <button class="icon no-bb"><img src="assets/img/icon-arrow-right.png"/>
+                <button class="btn-icon no-bb"><span class="icon icon-arrow-right"></span>
                 </button>
               </form>
               <div class="data-rows-wrapper">
@@ -158,30 +160,68 @@
         <button class="btn1">Find Courses</button>
       </form>
     </div>
-    <div class="most-viewed home-block">
-      <div class="container">
-        <h2 class="title"> Most Viewed</h2>
+    <div class="most-viewed-block home-block hidden-xs hidden-sm hidden-md">
+      <div class="container phn">
+        <h2 class="home-block-title"> Most Viewed</h2>
         <div class="cards">
-          <div class="card">
-            <div class="title">English Max Course (18 hrs/week)</div>
-            <div class="img-area"><img class="img" src="assets/pic/most-viewed1.png">
+          <div class="card"><img class="number-mark" src="assets/img/2nd.png">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/most-viewed1.png">
               <div class="price">USD 300,000</div>
-              <div class="hover">
-                <div class="more"><img src="assets/img/icon-search.png"/>READ MORE
-                </div>
-              </div>
-            </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
             <div class="text-area">
               <div class="col-left">
-                <div class="info"><img src="assets/img/icon-graduation-hat-teal.png"/>Connect English Language Institute- Mission Valley
+                <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
                 </div>
-                <div class="info"><img src="assets/img/icon-position-teal.png"/>SAN DIEGO, USA
+                <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
                 </div>
-                <div class="info"><img src="assets/img/icon-position-calendar-teal.png"/>20th Feb - 30th March, 2017
+                <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
                 </div>
               </div>
               <div class="col-right">
-                <div class="info"><img src="assets/img/icon-user-teal.png"/>5 Spaces left
+                <div class="info"><span class="icon icon-user"></span>5 Spaces left
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="card"><img class="number-mark" src="assets/img/1st.png">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/most-viewed2.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="col-left">
+                <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+                </div>
+                <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+                </div>
+                <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+                </div>
+              </div>
+              <div class="col-right">
+                <div class="info"><span class="icon icon-user"></span>5 Spaces left
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="card"><img class="number-mark" src="assets/img/3rd.png">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/most-viewed3.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="col-left">
+                <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+                </div>
+                <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+                </div>
+                <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+                </div>
+              </div>
+              <div class="col-right">
+                <div class="info"><span class="icon icon-user"></span>5 Spaces left
                 </div>
               </div>
               <div class="clearfix"></div>
@@ -190,7 +230,555 @@
         </div>
       </div>
     </div>
-    <div class="featured-courses home-block bg1"></div>
-    <div class="container"></div>
+    <div class="featured-courses-block home-block bg1 hidden-xs hidden-sm hidden-md">
+      <div class="container phn">
+        <h2 class="home-block-title"> Featured Courses</h2>
+        <div class="cards-bg">
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110055.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="col-left">
+                <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+                </div>
+                <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+                </div>
+                <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+                </div>
+              </div>
+              <div class="col-right">
+                <div class="info"><span class="icon icon-user"></span>5 Spaces left
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-111253.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="col-left">
+                <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+                </div>
+                <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+                </div>
+                <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+                </div>
+              </div>
+              <div class="col-right">
+                <div class="info"><span class="icon icon-user"></span>5 Spaces left
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cards-sm">
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer13copy.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-54276copy.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/gerlitz-glacier-mountains-in-the-morning-paragliding-65677copy.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="early-bird-courses-block home-block">
+      <div class="container phn">
+        <div class="pics flex justify-sb"><a><img src="assets/pic/Layer103.png"></a><a><img src="assets/pic/Layer102.png"></a></div>
+        <div class="title-bar">
+          <div class="home-block-title title">Early Bird Courses</div><a class="more" href="#">View more »</a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer13copy.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-54276copy.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-29737.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer13copy.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-54276copy.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-29737.png">
+              <div class="mark">Early Bird SALE</div>
+              <div class="price"><span>USD 300,000</span>
+                <div class="original-price">USD 300,000</div>
+              </div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="soon-to-start-courses-block home-block bg1 hidden-sm hidden-md">
+      <div class="container phn">
+        <div class="title-bar">
+          <div class="home-block-title title">Soon to Start Courses</div><a class="more" href="#">View more »</a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/hands-people-woman-working.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/hands-people-woman-working.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-251225.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/hands-people-woman-working.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/hands-people-woman-working.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">English Max Course (18 hrs/week)</div><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-251225.png">
+              <div class="price">USD 300,000</div>
+              <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+              </div></a>
+            <div class="text-area">
+              <div class="info"><span class="icon icon-graduation-hat"></span>Connect English Language Institute- Mission Valley
+              </div>
+              <div class="info"><span class="icon icon-position"></span>SAN DIEGO, USA
+              </div>
+              <div class="info"><span class="icon icon-calendar"></span>20th Feb - 30th March, 2017
+              </div>
+              <div class="info"><span class="icon icon-user"></span>5 Spaces left
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="big-block home-block hidden-sm hidden-md">
+      <div class="container phn">
+        <div class="pics flex justify-sb"><a><img src="assets/pic/Layer103.png"></a><a><img src="assets/pic/Layer102.png"></a></div>
+        <div class="home-block-title">Adventures</div>
+        <div class="carousel _1">
+          <div class="carousel-btn btn-left"><span class="icon icon-left-open-big"></span>
+          </div>
+          <div class="carousel-btn btn-right"><span class="icon icon-right-open-big"></span>
+          </div>
+          <div class="carousel-list-wrapper">
+            <div class="carousel-list">
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Specially</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="home-block-title">Lifestyle</div>
+        <div class="carousel _1">
+          <div class="carousel-btn btn-left"><span class="icon icon-left-open-big"></span>
+          </div>
+          <div class="carousel-btn btn-right"><span class="icon icon-right-open-big"></span>
+          </div>
+          <div class="carousel-list-wrapper">
+            <div class="carousel-list">
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Specially</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="home-block-title">Categories</div>
+        <div class="carousel _1">
+          <div class="carousel-btn btn-left"><span class="icon icon-left-open-big"></span>
+          </div>
+          <div class="carousel-btn btn-right"><span class="icon icon-right-open-big"></span>
+          </div>
+          <div class="carousel-list-wrapper">
+            <div class="carousel-list">
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Specially</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Professional</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/pexels-photo-110469copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer15copy.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Business</div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="home-block-title">Countries</div>
+        <div class="carousel _2">
+          <div class="carousel-btn btn-left"><span class="icon icon-left-open-big"></span>
+          </div>
+          <div class="carousel-btn btn-right"><span class="icon icon-right-open-big"></span>
+          </div>
+          <div class="carousel-list-wrapper">
+            <div class="carousel-list">
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer7.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">London</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer8.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Paris</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer9.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Tokyo</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer10.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Havana</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer11.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Cape Town</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer10.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Miami</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer10.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Havana</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer11.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Cape Town</div>
+              </div>
+              <div class="carousel-item"><a class="img-area has-read-more" href="#"><img class="img" src="assets/pic/Layer10.png"/>
+                  <div class="read-more"><span class="icon icon-search"></span><span class="mlm">READ MORE</span>
+                  </div></a>
+                <div class="text-area">Miami</div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe-block home-block hidden-sm hidden-md">
+      <div class="title">Subscribe to our mailing list</div>
+      <div class="title2">BE THE FIRST TO GET LATEST NEWS AND OFFERS!</div>
+      <form>
+        <input class="input _fc" type="text" placeholder="Enter your email">
+        <button class="btn _fc">Subscribe!</button>
+      </form>
+    </div>
+    <div class="main-footer">
+      <div class="_1">
+        <div class="container phn">
+          <div class="row">
+            <div class="col-sm-2 col-xs-6">
+              <div class="title">Borocol</div>
+              <div class="links"><a class="link" href="#">About Us</a><a class="link" href="#">Recruitment</a><a class="link" href="#">Media</a><a class="link" href="#">FAQs</a><a class="link" href="#">Contact Us</a></div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+              <div class="title">Contact Us</div>
+              <div class="links"><a class="link" href="#">Borocol</a><a class="link" href="#">103 Arthur Road</a><a class="link" href="#">Windsor</a><a class="link" href="#">SL4 1 RU</a><a class="link" href="#">sales@borocol.com</a><a class="link" href="#">01753 833442</a></div>
+            </div>
+            <div class="col-sm-2 col-xs-6">
+              <div class="title">Legal & Cookies</div>
+              <div class="links"><a class="link" href="#">Terms & Conditions</a><a class="link" href="#">Privacy Policy</a><a class="link" href="#">Cookie Policy</a><a class="link" href="#">Returns Policy</a><a class="link" href="#"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="_2">
+        <div class="container phn">
+           © 2017 All Rights Reserved Borocol - Privacy Policy - Terms and conditions</div>
+      </div>
+    </div>
   </body>
 </html>

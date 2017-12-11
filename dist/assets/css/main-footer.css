@@ -1,0 +1,19 @@
+.main-footer ._1 {
+  background-color: #5B5B5D;
+  padding-top: 90px;
+  padding-bottom: 140px; }
+  .main-footer ._1 .title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold; }
+  .main-footer ._1 .links {
+    margin-top: 10px;
+    line-height: 30px; }
+    .main-footer ._1 .links a {
+      color: #bababa;
+      display: block; }
+
+.main-footer ._2 {
+  color: #fff;
+  background: #262626;
+  padding: 15px 0; }
