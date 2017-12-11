@@ -1,0 +1,22 @@
+{
+  "name": "borocol-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-pug": "pug src/tpl/pages -o dist --pretty -w",
+    "watch-sass": "node-sass src/style -o  dist/assets/css -rw"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "css-spacing": "^1.0.6",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

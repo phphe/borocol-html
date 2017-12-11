@@ -1,0 +1,51 @@
+include ../common.pug
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Borocol
+    // Bootstrap
+    link(href='../node_modules/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+    link(href='../node_modules/css-spacing/css/css-spacing.css ', rel='stylesheet')
+    link(href='assets/css/common.css', rel='stylesheet')
+    link(href='assets/css/home.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js')
+  body
+    include ../main-header.pug
+    .most-viewed.home-block
+      .container
+        h2.title  Most Viewed
+        .cards
+          .card
+            .title English Max Course (18 hrs/week)
+            .img-area
+              img.img(src="assets/pic/most-viewed1.png")
+              .price USD 300,000
+              .hover
+                .more
+                  +iconImg('search')
+                  | READ MORE
+            .text-area
+              .col-left
+                .info
+                  +iconImg('graduation-hat-teal')
+                  | Connect English Language Institute- Mission Valley
+                .info
+                  +iconImg('position-teal')
+                  | SAN DIEGO, USA
+                .info
+                  +iconImg('position-calendar-teal')
+                  | 20th Feb - 30th March, 2017
+              .col-right
+                .info
+                  +iconImg('user-teal')
+                  | 5 Spaces left
+              .clearfix
+    .featured-courses.home-block.bg1
+    .container

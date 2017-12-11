@@ -1,0 +1,64 @@
+mixin dataRow
+  .data-row
+    .img-area
+      img(src="assets/pic/header-course.png")
+    .text-area
+      .title English Max Course
+      .description
+        | Connect English Language Institute 
+        br
+        | Mission Valley
+      .info SAN DIEGO, USA
+      
+.main-header
+  .container
+    .brand-bar
+      .brand
+        img(src="assets/img/brand.png")
+      .tool-bar.pull-right
+        a(href="#") partner with us
+        .divider |
+        +iconImg('user')
+        a.mlm(href="#") Login
+        .divider |
+        +iconImg('country')
+        a.mlm(href="#") USD
+        .divider |
+        +iconImg('lang')
+        a.mlm(href="#") EN
+        .divider |
+        a(href="#") Q&a
+        button.mlm.no-bb(type="button" class="search-btn")
+          +iconImg('search')
+  .banner-bar
+    img.banner(src="assets/pic/header.png")
+    .lb1
+      .container
+        .course-search-card.bg1.pull-right
+          form.search-wrapper
+            input.input(type="text" placeholder="Course Name...")
+            button.icon.no-bb
+              +iconImg('arrow-right')
+          .data-rows-wrapper
+            .data-rows
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+              +dataRow
+        .clearfix
+  form.filter-bar.bg1
+      select.select1.country-select(placeholder="Select Country")
+        option Select Country
+        option USA
+      select.select1.subject-select(placeholder="Select Subject")
+        option Select Subject
+        option USA
+      button.btn1 Find Courses

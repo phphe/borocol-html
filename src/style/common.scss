@@ -1,0 +1,206 @@
+// mixins
+@mixin noFocusOutline {
+  &:focus{
+    outline: none;
+  }
+}
+@mixin noBb {
+  border: none;
+  background: none;
+}
+// common helpers
+.icon-img{
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.no-bb{
+  @include noBb;
+}
+
+// site helpers
+$bg1: #F3F2F0;
+.bg1{
+  background-color: $bg1;
+}
+
+// components
+$formControlHeight: 55px;
+.select1{
+  height: $formControlHeight;
+  line-height: $formControlHeight;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #888888;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  &:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+}
+.btn1{
+  @include noBb;
+  height: $formControlHeight;
+  line-height: $formControlHeight;
+  text-align: center;
+  background: #48CCCE;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #8BDBDA;
+  border-radius: 4px;
+}
+
+$width1 : 1400px;
+.container{
+  @media (min-width: 1200px){
+    width: $width1;
+  }
+}
+
+// common parts
+.main-header{
+  .brand-bar{
+    padding: 60px 0 30px 0;
+    .brand{
+      display: inline-block;
+    }
+  }
+
+  .tool-bar{
+    $height:37.5px;
+    height: $height;
+    line-height: $height;
+    $color: #000;
+    a{
+      text-transform:uppercase;
+      color: $color;
+    }
+    .divider{
+      display: inline-block;
+      color: $color;
+      padding: 0 1em;
+    }
+    .search-btn{
+      width: $height;
+      height: $height;
+      padding: 0;
+      text-align: center;
+      background-color: #000;
+      img{
+        vertical-align: middle;
+      }
+      // flex
+      flex-shrink: 0;
+    }
+    // flex
+    display: flex;
+    align-items: center;
+  }
+
+  .banner-bar{
+    .banner{
+      width: 100%;
+    }
+    position: relative;
+    // layout block
+    .lb1{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      overflow: visible;
+    }
+  }
+  .course-search-card {
+    width: 480px;
+    height: 620px;
+    padding: 40px 30px 40px 40px;
+    .search-wrapper{
+      $height: 40px;
+      height: $height;
+      border-bottom: 3px solid #fff;
+      position: relative;
+      //
+      $iconH: 30px;
+      .icon{
+        @include noFocusOutline;
+        width: $iconH;
+        height: $iconH;
+        line-height: $iconH;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .input{
+        @include noFocusOutline;
+        @include noBb;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        padding-right: $iconH;
+      }
+    }
+    .data-rows-wrapper{
+      margin-top: 30px;
+      height: 480px;
+      overflow-y: auto;
+    }
+    .data-row{
+      height: 70px;
+      margin-bottom: 20px;
+      $imgAreaWidth: 100px;
+      .img-area{
+        width: $imgAreaWidth;
+        height: 100%;
+        float: left;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text-area{
+        margin-left: $imgAreaWidth + 15px;
+        .title{
+          font-size: 13px;
+          font-weight: bold;
+          color: #444444;
+        }
+        .description{
+          font-size: 11px;
+          color: #888888;
+          line-height: 15px;
+          margin-bottom: 6px;
+        }
+        .info{
+          font-size: 11px;
+          color: #888888;
+        }
+      }
+    }
+  }
+  .filter-bar{
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+    .select1{
+      width: 330px;
+    }
+    .country-select{
+
+    }
+    .subject-select{
+      margin-left: 25px;
+    }
+    .btn1{
+      width: 210px;
+      margin-left: 100px;
+    }
+  }
+}
