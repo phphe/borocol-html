@@ -13,7 +13,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "css-spacing": "^1.0.6",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "vanilla-lazyload": "^8.5.2"
   },
   "devDependencies": {
     "node-sass": "^4.7.2",

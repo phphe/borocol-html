@@ -6,7 +6,7 @@ mixin readMore
 mixin carouselItem(src, title)
   .carousel-item
     a.img-area.has-read-more(href="#")
-      img.img(src=src)
+      img.img(data-src=src)
       +readMore
     .text-area= title
     
@@ -18,8 +18,8 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title Borocol
     // libraries
-    link(href='../node_modules/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
-    link(href='../node_modules/css-spacing/css/css-spacing.css ', rel='stylesheet')
+    link(href='../node_modules/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../node_modules/css-spacing/css/css-spacing.min.css ', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
     //- site
     //- icon font
@@ -39,10 +39,10 @@ html(lang='en')
         .cards
           //- 2nd
           .card
-            img.number-mark(src="assets/img/2nd.png")
+            img.number-mark(data-src="assets/img/2nd.png")
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/most-viewed1.png")
+              img.img(data-src="assets/pic/most-viewed1.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -63,10 +63,10 @@ html(lang='en')
               .clearfix
           //- 1st
           .card
-            img.number-mark(src="assets/img/1st.png")
+            img.number-mark(data-src="assets/img/1st.png")
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/most-viewed2.png")
+              img.img(data-src="assets/pic/most-viewed2.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -87,10 +87,10 @@ html(lang='en')
               .clearfix
           //- 3rd
           .card
-            img.number-mark(src="assets/img/3rd.png")
+            img.number-mark(data-src="assets/img/3rd.png")
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/most-viewed3.png")
+              img.img(data-src="assets/pic/most-viewed3.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -116,7 +116,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-110055.png")
+              img.img(data-src="assets/pic/pexels-photo-110055.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -138,7 +138,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-111253.png")
+              img.img(data-src="assets/pic/pexels-photo-111253.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -162,7 +162,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/Layer13copy.png")
+              img.img(data-src="assets/pic/Layer13copy.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -182,7 +182,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-54276copy.png")
+              img.img(data-src="assets/pic/pexels-photo-54276copy.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -202,7 +202,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/gerlitz-glacier-mountains-in-the-morning-paragliding-65677copy.png")
+              img.img(data-src="assets/pic/gerlitz-glacier-mountains-in-the-morning-paragliding-65677copy.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -222,9 +222,9 @@ html(lang='en')
       .container.phn
         .pics.flex.justify-sb
           a
-            img(src="assets/pic/Layer103.png")
+            img(data-src="assets/pic/Layer103.jpg")
           a
-            img(src="assets/pic/Layer102.png")
+            img(data-src="assets/pic/Layer102.jpg")
         .title-bar
           .home-block-title.title Early Bird Courses
           a.more(href="#") View more »
@@ -233,7 +233,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/Layer13copy.png")
+              img.img(data-src="assets/pic/Layer13copy.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -256,7 +256,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-54276copy.png")
+              img.img(data-src="assets/pic/pexels-photo-54276copy.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -279,7 +279,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-29737.png")
+              img.img(data-src="assets/pic/pexels-photo-29737.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -302,7 +302,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/Layer13copy.png")
+              img.img(data-src="assets/pic/Layer13copy.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -325,7 +325,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-54276copy.png")
+              img.img(data-src="assets/pic/pexels-photo-54276copy.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -348,7 +348,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-29737.png")
+              img.img(data-src="assets/pic/pexels-photo-29737.jpg")
               .mark Early Bird SALE
               .price
                 span USD 300,000
@@ -378,7 +378,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/hands-people-woman-working.png")
+              img.img(data-src="assets/pic/hands-people-woman-working.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -398,7 +398,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/hands-people-woman-working.png")
+              img.img(data-src="assets/pic/hands-people-woman-working.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -418,7 +418,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-251225.png")
+              img.img(data-src="assets/pic/pexels-photo-251225.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -438,7 +438,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/hands-people-woman-working.png")
+              img.img(data-src="assets/pic/hands-people-woman-working.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -458,7 +458,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/hands-people-woman-working.png")
+              img.img(data-src="assets/pic/hands-people-woman-working.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -478,7 +478,7 @@ html(lang='en')
           .card
             .title English Max Course (18 hrs/week)
             a.img-area.has-read-more(href="#")
-              img.img(src="assets/pic/pexels-photo-251225.png")
+              img.img(data-src="assets/pic/pexels-photo-251225.jpg")
               .price USD 300,000
               +readMore
             .text-area
@@ -499,9 +499,9 @@ html(lang='en')
       .container.phn
         .pics.flex.justify-sb
           a
-            img(src="assets/pic/Layer103.png")
+            img(data-src="assets/pic/Layer103.jpg")
           a
-            img(src="assets/pic/Layer102.png")
+            img(data-src="assets/pic/Layer102.jpg")
         .home-block-title Adventures
         .carousel._1
           .carousel-btn.btn-left
@@ -510,12 +510,12 @@ html(lang='en')
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Specially')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Professional')
-              +carouselItem('assets/pic/Layer15copy.png', 'Professional')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Business')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Specially')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Professional')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Professional')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Business')
               .clearfix
         //-
         .home-block-title Lifestyle
@@ -526,12 +526,12 @@ html(lang='en')
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Specially')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Professional')
-              +carouselItem('assets/pic/Layer15copy.png', 'Professional')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Business')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Specially')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Professional')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Professional')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Business')
               .clearfix
         //-
         .home-block-title Categories
@@ -542,12 +542,12 @@ html(lang='en')
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Specially')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Professional')
-              +carouselItem('assets/pic/Layer15copy.png', 'Professional')
-              +carouselItem('assets/pic/pexels-photo-110469copy.png', 'Business')
-              +carouselItem('assets/pic/Layer15copy.png', 'Business')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Specially')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Professional')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Professional')
+              +carouselItem('assets/pic/pexels-photo-110469copy.jpg', 'Business')
+              +carouselItem('assets/pic/Layer15copy.jpg', 'Business')
               .clearfix
         //-
         .home-block-title Countries
@@ -558,15 +558,15 @@ html(lang='en')
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
-              +carouselItem('assets/pic/Layer7.png', 'London')
-              +carouselItem('assets/pic/Layer8.png', 'Paris')
-              +carouselItem('assets/pic/Layer9.png', 'Tokyo')
-              +carouselItem('assets/pic/Layer10.png', 'Havana')
-              +carouselItem('assets/pic/Layer11.png', 'Cape Town')
-              +carouselItem('assets/pic/Layer10.png', 'Miami')
-              +carouselItem('assets/pic/Layer10.png', 'Havana')
-              +carouselItem('assets/pic/Layer11.png', 'Cape Town')
-              +carouselItem('assets/pic/Layer10.png', 'Miami')
+              +carouselItem('assets/pic/Layer7.jpg', 'London')
+              +carouselItem('assets/pic/Layer8.jpg', 'Paris')
+              +carouselItem('assets/pic/Layer9.jpg', 'Tokyo')
+              +carouselItem('assets/pic/Layer10.jpg', 'Havana')
+              +carouselItem('assets/pic/Layer11.jpg', 'Cape Town')
+              +carouselItem('assets/pic/Layer10.jpg', 'Miami')
+              +carouselItem('assets/pic/Layer10.jpg', 'Havana')
+              +carouselItem('assets/pic/Layer11.jpg', 'Cape Town')
+              +carouselItem('assets/pic/Layer10.jpg', 'Miami')
               .clearfix
     .subscribe-block.home-block.hidden-sm.hidden-md
       .title Subscribe to our mailing list
@@ -577,3 +577,7 @@ html(lang='en')
         button.btn._fc() Subscribe!
     include ../main-footer.pug
     
+    //- script
+    script(src="../node_modules/vanilla-lazyload/dist/lazyload.min.js")
+    script
+      include home.js
