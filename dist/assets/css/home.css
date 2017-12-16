@@ -7,6 +7,9 @@
   font-weight: lighter;
   text-align: center;
   margin: 0; }
+  @media (max-width: 768px) {
+    .home-block-title {
+      font-size: 30px; } }
 
 .home-block .card {
   position: relative; }
@@ -58,6 +61,13 @@
     float: none;
     width: 100%; } }
 
+@media (max-width: 768px) {
+  .home-block .mini .card-wrapper-to-keep-shadow-in-slick {
+    padding: 0 10px;
+    padding-bottom: 15px; }
+  .home-block .mini .card {
+    width: auto; } }
+
 .most-viewed-block .cards {
   margin-top: 50px;
   position: relative; }
@@ -108,19 +118,25 @@
 .featured-courses-block .text-area .icon {
   color: #47CBCD; }
 
-.early-bird-courses-block .pics, .soon-to-start-courses-block .pics {
+.early-bird-courses-block .pics,
+.soon-to-start-courses-block .pics {
   margin-bottom: 70px;
   margin-right: -15px; }
-  .early-bird-courses-block .pics a, .soon-to-start-courses-block .pics a {
+  .early-bird-courses-block .pics a,
+  .soon-to-start-courses-block .pics a {
     margin-right: 15px; }
-  .early-bird-courses-block .pics img, .soon-to-start-courses-block .pics img {
+  .early-bird-courses-block .pics img,
+  .soon-to-start-courses-block .pics img {
     width: 100%; }
 
-.early-bird-courses-block .title-bar, .soon-to-start-courses-block .title-bar {
+.early-bird-courses-block .title-bar,
+.soon-to-start-courses-block .title-bar {
   position: relative; }
-  .early-bird-courses-block .title-bar .title, .soon-to-start-courses-block .title-bar .title {
+  .early-bird-courses-block .title-bar .title,
+  .soon-to-start-courses-block .title-bar .title {
     text-align: left; }
-  .early-bird-courses-block .title-bar .more, .soon-to-start-courses-block .title-bar .more {
+  .early-bird-courses-block .title-bar .more,
+  .soon-to-start-courses-block .title-bar .more {
     position: absolute;
     right: 0;
     bottom: 8px;
@@ -129,28 +145,44 @@
     color: #ffb200;
     text-transform: uppercase; }
 
-.early-bird-courses-block .cards, .soon-to-start-courses-block .cards {
+.early-bird-courses-block .cards,
+.soon-to-start-courses-block .cards {
   margin-top: 40px;
   margin-bottom: -3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
 
-.early-bird-courses-block .card, .soon-to-start-courses-block .card {
+.early-bird-courses-block .card,
+.soon-to-start-courses-block .card {
   width: 32%;
   margin-bottom: 3%; }
-  .early-bird-courses-block .card .img-area, .soon-to-start-courses-block .card .img-area {
+  .early-bird-courses-block .card .img-area,
+  .soon-to-start-courses-block .card .img-area {
     height: 47.333%; }
-  .early-bird-courses-block .card .text-area .icon, .soon-to-start-courses-block .card .text-area .icon {
+  .early-bird-courses-block .card .text-area .icon,
+  .soon-to-start-courses-block .card .text-area .icon {
     color: #ffb200; }
 
-@media (max-width: 1170px) {
-  .early-bird-courses-block .card, .soon-to-start-courses-block .card {
+@media (max-width: 1200px) {
+  .early-bird-courses-block .card,
+  .soon-to-start-courses-block .card {
     width: 49%; } }
 
-@media (max-width: 970px) {
-  .early-bird-courses-block .title-bar .more, .soon-to-start-courses-block .title-bar .more {
+@media (max-width: 992px) {
+  .early-bird-courses-block .title-bar .more,
+  .soon-to-start-courses-block .title-bar .more {
     position: static; } }
+
+.early-bird-courses-block .cards.mini,
+.soon-to-start-courses-block .cards.mini {
+  display: block; }
+  .early-bird-courses-block .cards.mini .slick-list,
+  .soon-to-start-courses-block .cards.mini .slick-list {
+    margin-bottom: 20px; }
+  .early-bird-courses-block .cards.mini .card,
+  .soon-to-start-courses-block .cards.mini .card {
+    margin-bottom: 0; }
 
 .soon-to-start-courses-block .title-bar .more {
   color: #7CC576; }
@@ -171,7 +203,7 @@
   margin-top: 70px; }
 
 .big-block .carousel._1 .carousel-btn {
-  top: 65px; }
+  top: 50px; }
 
 .big-block .carousel._1 .carousel-item {
   width: 260px; }
@@ -184,11 +216,37 @@
       width: 100%; }
 
 .big-block .carousel._2 .carousel-btn {
-  top: 132px; }
+  top: 120px; }
 
 .big-block .carousel._2 .carousel-item .img-area {
   width: 220px;
-  height: 320px; }
+  height: 0;
+  padding-bottom: 148%; }
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .big-block .carousel {
+    width: 80%;
+    margin: 0 auto;
+    width: calc(100% - 60px * 2); } }
+
+.big-block .carousel.mini .carousel-btn {
+  display: none; }
+
+.big-block .carousel.mini .carousel-item {
+  margin-right: 0; }
+  .big-block .carousel.mini .carousel-item .text-area {
+    font-size: 25px;
+    margin-top: 0;
+    font-weight: 400; }
+
+.big-block .carousel.mini .slick-dots {
+  margin-top: 20px; }
+
+.big-block .carousel.mini .card {
+  width: 100%; }
+
+.big-block .carousel._2 .carousel-item .img-area {
+  width: 100%; }
 
 .subscribe-block {
   height: 445px;
@@ -225,5 +283,20 @@
     background-color: #262626;
     font-weight: 500;
     text-transform: uppercase; }
-    .subscribe-block .btn:hover, .subscribe-block .btn:focus {
+    .subscribe-block .btn:focus, .subscribe-block .btn:hover {
       color: #ccc; }
+  @media (max-width: 992px) {
+    .subscribe-block .title {
+      font-size: 40px; }
+    .subscribe-block .title2 {
+      margin-top: 15px;
+      font-size: 21px; }
+    .subscribe-block form {
+      margin-top: 30px; }
+      .subscribe-block form ._fc {
+        display: block;
+        width: 350px;
+        max-width: 90%;
+        margin: 0 auto; }
+      .subscribe-block form .input {
+        margin-bottom: 15px; } }

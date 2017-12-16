@@ -21,20 +21,24 @@ mixin dataRow
         +icon('user')
         a.mlm(href="#") Login
         .divider |
-        +icon('country')
+        +icon('credit-card')
         a.mlm(href="#") USD
         .divider |
-        +icon('language')
-        a.mlm(href="#") EN
+        span.language
+          +icon('language')
+          a.mlm(href="#") EN
+          +icon('caret-down').mls.hidden-md.hidden-lg
         .divider |
         a(href="#") Q&a
-        button.mlm.no-bb(type="button" class="search-btn")
+        button.mlm.no-bb.btn-black.search-btn(type="button")
           +icon('search')
+        button.no-bb.btn-black.menu-btn.hidden-md.hidden-lg(type="button")
+          +icon('bars')
   .banner-bar
     img.banner(data-src="assets/pic/header.jpg")
     .lb1
       .container
-        .course-search-card.bg1.pull-right
+        .course-search-card.bg1.pull-right.hidden-xs.hidden-sm.hidden-md
           form.search-wrapper
             input.input(type="text" placeholder="Course Name...")
             button.btn-icon.no-bb
@@ -53,8 +57,25 @@ mixin dataRow
               +dataRow
               +dataRow
               +dataRow
-        .clearfix
+    .menu-card.bg1.pull-right.hidden-lg
+      .menu
+        .menu-item
+          a(href="#")
+            span HKD
+            +icon('caret-down')
+          .sub-menu
+            .menu-item
+              a(href="#") HKD
+            .menu-item
+              a(href="#") HKD
+            .menu-item
+              a(href="#") HKD
+        .menu-item
+          a(href="#") Login
+        .menu-item
+          a(href="#") Join us
   form.filter-bar.bg1
+    .container
       select.select1.country-select(placeholder="Select Country")
         option Select Country
         option USA

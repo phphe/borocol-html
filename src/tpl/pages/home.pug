@@ -21,6 +21,7 @@ html(lang='en')
     link(href='../node_modules/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
     link(href='../node_modules/css-spacing/css/css-spacing.min.css ', rel='stylesheet')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
+    link(href='../node_modules/slick-carousel/slick/slick.css', rel='stylesheet')
     //- site
     //- icon font
     link(href='https://file.myfontastic.com/DhuomFVWA52VBraDyGBsZ/icons.css', rel='stylesheet')
@@ -502,9 +503,9 @@ html(lang='en')
             img(data-src="assets/pic/Layer102.jpg")
         .home-block-title Adventures
         .carousel._1
-          .carousel-btn.btn-left
+          .carousel-btn.left-btn
             +icon('left-open-big')
-          .carousel-btn.btn-right
+          .carousel-btn.right-btn
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
@@ -518,9 +519,9 @@ html(lang='en')
         //-
         .home-block-title Lifestyle
         .carousel._1
-          .carousel-btn.btn-left
+          .carousel-btn.left-btn
             +icon('left-open-big')
-          .carousel-btn.btn-right
+          .carousel-btn.right-btn
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
@@ -534,9 +535,9 @@ html(lang='en')
         //-
         .home-block-title Categories
         .carousel._1
-          .carousel-btn.btn-left
+          .carousel-btn.left-btn
             +icon('left-open-big')
-          .carousel-btn.btn-right
+          .carousel-btn.right-btn
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
@@ -550,9 +551,9 @@ html(lang='en')
         //-
         .home-block-title Countries
         .carousel._2
-          .carousel-btn.btn-left
+          .carousel-btn.left-btn
             +icon('left-open-big')
-          .carousel-btn.btn-right
+          .carousel-btn.right-btn
             +icon('right-open-big')
           .carousel-list-wrapper
             .carousel-list
@@ -576,10 +577,13 @@ html(lang='en')
     include ../main-footer.pug
     
     //- script
+    //- libraries
     //- jquery
     script(src="../node_modules/jquery/dist/jquery.min.js")
+    script(src="../node_modules/slick-carousel/slick/slick.min.js")
     //- lazyload
     script(src="../node_modules/vanilla-lazyload/dist/lazyload.min.js")
     script
       include home.js
     script(src="assets/js/common.js")
+    script(src="assets/js/home.js")

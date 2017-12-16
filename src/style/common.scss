@@ -1,38 +1,46 @@
 @import "define.scss";
-
 // common helpers
-.w-100{
+.w-100 {
   width: 100%;
 }
-.h-100{
+
+.h-100 {
   height: 100%;
 }
-.flex{
+
+.flex {
   display: flex;
 }
-.flex-1{
+
+.flex-1 {
   flex: 1;
 }
-.flex-col{
+
+.flex-col {
   flex-direction: column;
 }
-.justify-sb{
+
+.justify-sb {
   justify-content: space-between;
 }
-.justify-c{
+
+.justify-c {
   justify-content: center;
 }
-.relative{
+
+.relative {
   position: relative;
 }
-.absolute{
+
+.absolute {
   position: absolute;
 }
-.no-bb{
+
+.no-bb {
   @include noBb;
 }
 
-.col-sm{
+.col-sm {
   float: left;
   position: relative;
   min-height: 1px;
@@ -45,22 +53,26 @@
     margin-right: 0;
   }
 }
-
 // site helpers
-.bg1{
-  background-color: $bg1;
+.icon {}
+
+.icon:before {
+  vertical-align: middle;
 }
 
+.bg1 {
+  background-color: $bg1;
+}
 // global
-body{
+body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: $color1;
 }
-
 // components
 $formControlHeight: 55px;
-.select1{
+
+.select1 {
   // icon
   appearance: none;
   -moz-appearance: none;
@@ -75,13 +87,15 @@ $formControlHeight: 55px;
   background-color: #fff;
   border: 2px solid #ccc;
   border-radius: 3px;
-  &:focus{
+
+  &:focus {
     border-color: #66afe9;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
   }
 }
-.btn1{
+
+.btn1 {
   @include noBb;
   height: $formControlHeight;
   line-height: $formControlHeight;
@@ -94,10 +108,11 @@ $formControlHeight: 55px;
   border-radius: 4px;
 }
 
-.has-read-more{
+.has-read-more {
   position: relative;
   display: block;
-  .read-more{
+
+  .read-more {
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -112,13 +127,15 @@ $formControlHeight: 55px;
     font-weight: 500;
     display: flex;
     align-items: center;
-    .icon{
+
+    .icon {
       position: relative;
       top: 3px;
     }
   }
-  &:hover{
-    .read-more{
+
+  &:hover {
+    .read-more {
       visibility: visible;
       background-color: rgba(125, 125, 125, 0.6);
       color: #fff;
@@ -126,72 +143,91 @@ $formControlHeight: 55px;
   }
 }
 
-.card{
+.card {
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 3px 20.37px 0.63px rgba(159, 159, 159, 0.31);
-  .title{
+  box-shadow: 0 3px 20.37px 0.63px rgba(159, 159, 159, 0.31);
+
+  .title {
     $height: 50px;
     height: $height;
     line-height: $height;
     font-size: 21px;
   }
-  .img-area{
+
+  .img-area {
     display: block;
     text-decoration: none;
     position: relative;
     height: 0;
     overflow: hidden;
-    .img{
+
+    .img {
       width: 100%;
     }
   }
-  .text-area{
+
+  .text-area {
     padding: 15px;
     $iconW: 1.5em;
-    .info{
+
+    .info {
       clear: both;
     }
-    .icon{
+
+    .icon {
       display: inline-block;
       width: $iconW;
       text-align: center;
       font-size: 18px;
       float: left;
+
+      &:before {
+        vertical-align: baseline;
+      }
     }
-    .text-area2{
+
+    .text-area2 {
       margin-left: $iconW;
     }
   }
 }
 
-.carousel{
+.carousel {
   position: relative;
-  .carousel-btn{
+
+  .carousel-btn {
     color: #7D7D7D;
     cursor: pointer;
     position: absolute;
     font-size: 40px;
   }
-  .btn-left{
+
+  .left-btn {
     right: 101%;
     right: calc(100% + 25px);
   }
-  .btn-right{
+
+  .right-btn {
     left: 101%;
     left: calc(100% + 25px);
   }
 }
-.carousel-list-wrapper{
+
+.carousel-list-wrapper {
   overflow-x: hidden;
 }
-.carousel-list{
+
+.carousel-list {
   white-space: nowrap;
+  position: relative;
 }
-.carousel-item{
+
+.carousel-item {
   display: inline-block;
   margin-right: 20px;
-  .text-area{
+
+  .text-area {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
@@ -199,9 +235,36 @@ $formControlHeight: 55px;
   }
 }
 
-.container{
+.slick-list{
+  .clearfix{
+    display: none;
+  }
+}
+.slick-dots {
+  list-style: none;
   padding: 0;
-  @media (min-width: $superLarge){
+  text-align: center;
+  li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #6f6f6f;
+    margin-right: 8px;
+    &.slick-active {
+      background: #48ccce;
+    }
+  }
+
+  button {
+    visibility: hidden;
+  }
+}
+
+.container {
+  padding: 0;
+  @media (min-width: $superLarge) {
     width: 1400px;
   }
   // xs extra small and small 特小屏幕 手机 和 小屏幕 平板
@@ -211,7 +274,6 @@ $formControlHeight: 55px;
     padding-right: 15px;
   }
 }
-
 // common parts
-@import "main-header.scss";;
-@import "main-footer.scss";;
+@import "main-header.scss";
+@import "main-footer.scss";
