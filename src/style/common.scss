@@ -38,7 +38,8 @@
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  @media (max-width: $small) {
+  // xs extra small 特小屏幕 手机
+  @media(max-width: $small) {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -95,6 +96,7 @@ $formControlHeight: 55px;
 
 .has-read-more{
   position: relative;
+  display: block;
   .read-more{
     width: 100%;
     height: 100%;
@@ -137,27 +139,28 @@ $formControlHeight: 55px;
   .img-area{
     display: block;
     text-decoration: none;
-
     position: relative;
+    height: 0;
+    overflow: hidden;
     .img{
       width: 100%;
     }
   }
   .text-area{
     padding: 15px;
+    $iconW: 1.5em;
     .info{
-      $height: 25px;
-      height: $height;
-      line-height: $height;
-      .icon{
-        display: inline-block;
-        width: 1.5em;
-        text-align: center;
-
-      }
-      img{
-        vertical-align: inherit;
-      }
+      clear: both;
+    }
+    .icon{
+      display: inline-block;
+      width: $iconW;
+      text-align: center;
+      font-size: 18px;
+      float: left;
+    }
+    .text-area2{
+      margin-left: $iconW;
     }
   }
 }
@@ -196,10 +199,16 @@ $formControlHeight: 55px;
   }
 }
 
-$width1 : 1400px;
 .container{
-  @media (min-width: 1200px){
-    width: $width1;
+  padding: 0;
+  @media (min-width: $superLarge){
+    width: 1400px;
+  }
+  // xs extra small and small 特小屏幕 手机 和 小屏幕 平板
+  @media(max-width: $medium) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

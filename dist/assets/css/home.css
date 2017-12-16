@@ -8,13 +8,6 @@
   text-align: center;
   margin: 0; }
 
-.home-block .img-area {
-  display: block;
-  text-decoration: none;
-  position: relative; }
-  .home-block .img-area .img {
-    width: 100%; }
-
 .home-block .card {
   position: relative; }
   .home-block .card .number-mark {
@@ -35,22 +28,19 @@
     padding: 5px 10px; }
   .home-block .card .title {
     padding-left: 30px; }
-  .home-block .card .img-area {
-    height: 300px;
-    overflow: hidden; }
-    .home-block .card .img-area .price {
-      background-color: #707070;
-      position: absolute;
-      top: 70%;
-      right: 0;
-      padding: 5px 10px;
-      font-size: 16px;
-      color: white;
-      font-weight: bold; }
-    .home-block .card .img-area .original-price {
-      font-size: 13px;
-      text-align: right;
-      text-decoration: line-through; }
+  .home-block .card .img-area .price {
+    background-color: #707070;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold; }
+  .home-block .card .img-area .original-price {
+    font-size: 13px;
+    text-align: right;
+    text-decoration: line-through; }
   .home-block .card .text-area .col-left {
     width: 80%;
     float: left; }
@@ -59,32 +49,40 @@
     float: right; }
     .home-block .card .text-area .col-right .info {
       font-size: 10px; }
-  .home-block .card .text-area .icon {
-    font-size: 18px;
-    vertical-align: middle; }
 
-.most-viewed-block .card {
-  width: 540px; }
-  .most-viewed-block .card .title {
-    padding-left: 40px; }
+@media (max-width: 1500px) {
+  .home-block .card .text-area .col-left {
+    float: none;
+    width: 100%; }
+  .home-block .card .text-area .col-right {
+    float: none;
+    width: 100%; } }
 
 .most-viewed-block .cards {
   margin-top: 50px;
   position: relative; }
 
+.most-viewed-block .card {
+  width: 38%; }
+  .most-viewed-block .card .title {
+    padding-left: 40px; }
+
 .most-viewed-block .card:nth-child(1) {
   position: absolute;
-  left: -64.8px;
+  left: -4.56%;
   transform: scale(0.76); }
 
 .most-viewed-block .card:nth-child(3) {
   position: absolute;
-  right: -64.8px;
+  right: -4.56%;
   top: 0;
   transform: scale(0.76); }
 
 .most-viewed-block .card:nth-child(2) {
   margin: 0 auto; }
+
+.most-viewed-block .img-area {
+  padding-bottom: 55%; }
 
 .most-viewed-block .text-area .icon {
   color: #47CBCD; }
@@ -94,26 +92,29 @@
   display: flex;
   justify-content: space-between; }
   .featured-courses-block .cards-bg .card {
-    width: 685px; }
+    width: 49.5%; }
   .featured-courses-block .cards-bg .img-area {
-    height: 370px; }
+    padding-bottom: 54%; }
 
 .featured-courses-block .cards-sm {
   margin-top: 30px;
   display: flex;
   justify-content: space-between; }
   .featured-courses-block .cards-sm .card {
-    width: 455px; }
+    width: 32.7%; }
   .featured-courses-block .cards-sm .img-area {
-    height: 240px; }
+    padding-bottom: 54%; }
 
 .featured-courses-block .text-area .icon {
   color: #47CBCD; }
 
 .early-bird-courses-block .pics, .soon-to-start-courses-block .pics {
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  margin-right: -15px; }
+  .early-bird-courses-block .pics a, .soon-to-start-courses-block .pics a {
+    margin-right: 15px; }
   .early-bird-courses-block .pics img, .soon-to-start-courses-block .pics img {
-    width: 680px; }
+    width: 100%; }
 
 .early-bird-courses-block .title-bar, .soon-to-start-courses-block .title-bar {
   position: relative; }
@@ -130,18 +131,26 @@
 
 .early-bird-courses-block .cards, .soon-to-start-courses-block .cards {
   margin-top: 40px;
-  margin-right: -25px;
-  margin-bottom: -25px; }
+  margin-bottom: -3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .early-bird-courses-block .card, .soon-to-start-courses-block .card {
-  width: 450px;
-  float: left;
-  margin-right: 25px;
-  margin-bottom: 25px; }
+  width: 32%;
+  margin-bottom: 3%; }
   .early-bird-courses-block .card .img-area, .soon-to-start-courses-block .card .img-area {
-    height: 240px; }
+    height: 47.333%; }
   .early-bird-courses-block .card .text-area .icon, .soon-to-start-courses-block .card .text-area .icon {
     color: #ffb200; }
+
+@media (max-width: 1170px) {
+  .early-bird-courses-block .card, .soon-to-start-courses-block .card {
+    width: 49%; } }
+
+@media (max-width: 970px) {
+  .early-bird-courses-block .title-bar .more, .soon-to-start-courses-block .title-bar .more {
+    position: static; } }
 
 .soon-to-start-courses-block .title-bar .more {
   color: #7CC576; }
@@ -149,8 +158,13 @@
 .soon-to-start-courses-block .card .text-area .icon {
   color: #7CC576; }
 
-.big-block .pics img {
-  width: 680px; }
+.big-block .pics {
+  margin-bottom: 70px;
+  margin-right: -15px; }
+  .big-block .pics a {
+    margin-right: 15px; }
+  .big-block .pics img {
+    width: 100%; }
 
 .big-block .home-block-title {
   font-size: 50px;
@@ -159,9 +173,15 @@
 .big-block .carousel._1 .carousel-btn {
   top: 65px; }
 
-.big-block .carousel._1 .carousel-item .img-area {
-  width: 260px;
-  height: 180px; }
+.big-block .carousel._1 .carousel-item {
+  width: 260px; }
+  .big-block .carousel._1 .carousel-item .img-area {
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 69.23077%; }
+    .big-block .carousel._1 .carousel-item .img-area img {
+      width: 100%; }
 
 .big-block .carousel._2 .carousel-btn {
   top: 132px; }

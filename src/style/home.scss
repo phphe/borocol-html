@@ -11,14 +11,6 @@
   margin: 0;
 }
 .home-block{
-  .img-area{
-    display: block;
-    text-decoration: none;
-    position: relative;
-    .img{
-      width: 100%;
-    }
-  }
   .card{
     position: relative;
     .number-mark{
@@ -44,8 +36,6 @@
       padding-left: 30px;
     }
     .img-area{
-      height: 300px;
-      overflow: hidden;
       .price {
         background-color: rgb(112, 112, 112);
         position: absolute;
@@ -74,25 +64,35 @@
           font-size: 10px;
         }
       }
-      .icon{
-        font-size: 18px;
-        vertical-align: middle;
+    }
+  }
+  @media(max-width: $superLarge) {
+    .card{
+      .text-area{
+        .col-left{
+          float: none;
+          width: 100%;
+        }
+        .col-right{
+          float: none;
+          width: 100%;
+        }
       }
     }
   }
 }
 $iconTealColor: #47CBCD;
 .most-viewed-block{
-  $width: 540px;
+  .cards{
+    margin-top: 50px;
+    position: relative;
+  }
+  $width: 38%;
   .card{
     width: $width;
     .title{
       padding-left: 40px;
     }
-  }
-  .cards{
-    margin-top: 50px;
-    position: relative;
   }
   $scale: 0.76;
   $offset: ($width - $width * $scale) / 2;
@@ -111,6 +111,9 @@ $iconTealColor: #47CBCD;
   .card:nth-child(2){
     margin: 0 auto;
   }
+  .img-area{
+    padding-bottom: 55%;
+  }
   .text-area{
     .icon{
       color: $iconTealColor;
@@ -124,10 +127,10 @@ $iconTealColor: #47CBCD;
     display: flex;
     justify-content: space-between;
     .card{
-      width: 685px;
+      width: 49.5%;
     }
     .img-area{
-      height: 370px;
+      padding-bottom: 54%;
     }
   }
   .cards-sm{
@@ -135,10 +138,10 @@ $iconTealColor: #47CBCD;
     display: flex;
     justify-content: space-between;
     .card{
-      width: 455px;
+      width: 32.7%;
     }
     .img-area{
-      height: 240px;
+      padding-bottom: 54%;
     }
   }
   .text-area{
@@ -152,8 +155,12 @@ $iconTealColor: #47CBCD;
   $iconColor: rgb(255, 178, 0);
   .pics{
     margin-bottom: 70px;
+    margin-right: -15px;
+    a{
+      margin-right: 15px;
+    }
     img{
-      width: 680px;
+      width: 100%;
     }
   }
   .title-bar{
@@ -172,23 +179,35 @@ $iconTealColor: #47CBCD;
     }
 
   }
-  $space: 25px;
+  $space: 3%;
   .cards{
     margin-top: 40px;
-    margin-right: -$space;
     margin-bottom: -$space;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .card{
-    width: 450px;
-    float: left;
-    margin-right: $space;
+    width: 32%;
     margin-bottom: $space;
     .img-area{
-      height: 240px;
+      height: 47.333%;
     }
     .text-area{
       .icon{
         color: $iconColor;
+      }
+    }
+  }
+  @media(max-width: $large){
+    .card{
+      width: 49%;
+    }
+  }
+  @media(max-width: $medium) {
+    .title-bar{
+      .more{
+        position: static;
       }
     }
   }
@@ -211,8 +230,13 @@ $iconTealColor: #47CBCD;
 }
 .big-block{
   .pics{
+    margin-bottom: 70px;
+    margin-right: -15px;
+    a{
+      margin-right: 15px;
+    }
     img{
-      width: 680px;
+      width: 100%;
     }
   }
   .home-block-title{
@@ -224,9 +248,15 @@ $iconTealColor: #47CBCD;
       top: 65px;
     }
     .carousel-item{
+      width: 260px;
       .img-area{
-        width: 260px;
-        height: 180px;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        padding-bottom: 180 / 260 * 100 + %;
+        img{
+          width: 100%;
+        }
       }
     }
   }
