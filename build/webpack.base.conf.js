@@ -14,7 +14,7 @@ var isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
   },
   output: {
     path: config.build.assetsRoot,
