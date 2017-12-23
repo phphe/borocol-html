@@ -1,5 +1,4 @@
 // style
-// import '@/styles/app.scss'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/css-spacing/css/css-spacing.min.css'
 import '../node_modules/slick-carousel/slick/slick.css'
