@@ -349,7 +349,7 @@ $iconTealColor: #47CBCD;
 
   .carousel {
     // sm md
-    @media(max-width: $large) and (min-width: $small) {
+    @media(max-width: $superLarge) and (min-width: $small) {
       width: 80%;
       margin: 0 auto;
       width: calc(100% - 60px * 2);
