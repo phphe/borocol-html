@@ -1,0 +1,563 @@
+extends ../layouts/base
+
+mixin readMore
+  .read-more
+    +icon('search')
+    span.mlm READ MORE
+mixin carouselItem(src, title)
+  .carousel-item
+    a.img-area.has-read-more(href="#")
+      img.img(data-src=src)
+      +readMore
+    .text-area= title
+    
+block append head
+  title Borocol
+  //- google font
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500', rel='stylesheet')
+  //- icon font
+  link(href='https://file.myfontastic.com/DhuomFVWA52VBraDyGBsZ/icons.css', rel='stylesheet')
+  
+block body
+  include ../components/main-header.pug
+  .most-viewed-block.home-block.hidden-xs.hidden-sm
+    .container
+      h2.home-block-title  Most Viewed
+      .cards
+        //- 2nd
+        .card
+          img.number-mark(data-src="/static/images/2nd.png")
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/most-viewed1.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .col-left
+              .info
+                +icon('graduation-hat')
+                .text-area2 Connect English Language Institute- Mission Valley
+              .info
+                +icon('position')
+                .text-area2 SAN DIEGO, USA
+              .info
+                +icon('calendar')
+                .text-area2 20th Feb - 30th March, 2017
+            .col-right
+              .info
+                +icon('user')
+                .text-area2 5 Spaces left
+            .clearfix
+        //- 1st
+        .card
+          img.number-mark(data-src="/static/images/1st.png")
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/most-viewed2.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .col-left
+              .info
+                +icon('graduation-hat')
+                .text-area2 Connect English Language Institute- Mission Valley
+              .info
+                +icon('position')
+                .text-area2 SAN DIEGO, USA
+              .info
+                +icon('calendar')
+                .text-area2 20th Feb - 30th March, 2017
+            .col-right
+              .info
+                +icon('user')
+                .text-area2 5 Spaces left
+            .clearfix
+        //- 3rd
+        .card
+          img.number-mark(data-src="/static/images/3rd.png")
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/most-viewed3.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .col-left
+              .info
+                +icon('graduation-hat')
+                .text-area2 Connect English Language Institute- Mission Valley
+              .info
+                +icon('position')
+                .text-area2 SAN DIEGO, USA
+              .info
+                +icon('calendar')
+                .text-area2 20th Feb - 30th March, 2017
+            .col-right
+              .info
+                +icon('user')
+                .text-area2 5 Spaces left
+            .clearfix
+  .featured-courses-block.home-block.bg1.hidden-xs.hidden-sm
+    .container
+      h2.home-block-title  Featured Courses
+      .cards-bg
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-110055.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .col-left
+              .info
+                +icon('graduation-hat')
+                .text-area2 Connect English Language Institute- Mission Valley
+              .info
+                +icon('position')
+                .text-area2 SAN DIEGO, USA
+              .info
+                +icon('calendar')
+                .text-area2 20th Feb - 30th March, 2017
+            .col-right
+              .info
+                +icon('user')
+                .text-area2 5 Spaces left
+            .clearfix
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-111253.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .col-left
+              .info
+                +icon('graduation-hat')
+                .text-area2 Connect English Language Institute- Mission Valley
+              .info
+                +icon('position')
+                .text-area2 SAN DIEGO, USA
+              .info
+                +icon('calendar')
+                .text-area2 20th Feb - 30th March, 2017
+            .col-right
+              .info
+                +icon('user')
+                .text-area2 5 Spaces left
+            .clearfix
+      .cards-sm
+        //- 3
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/Layer13copy.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //- 4
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-54276copy.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //- 5
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/gerlitz-glacier-mountains-in-the-morning-paragliding-65677copy.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+  .early-bird-courses-block.home-block
+    .container
+      .pics.flex.justify-sb.hidden-xs.hidden-sm.hidden-md
+        a
+          img(data-src="/static/pictures/Layer103.jpg")
+        a
+          img(data-src="/static/pictures/Layer102.jpg")
+      .title-bar
+        .home-block-title.title Early Bird Courses
+        a.more(href="#") View more »
+      //-
+      .cards
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/Layer13copy.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-54276copy.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-29737.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/Layer13copy.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-54276copy.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-29737.jpg")
+            .mark Early Bird SALE
+            .price
+              span USD 300,000
+              .original-price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+  .soon-to-start-courses-block.home-block.bg1
+    .container
+      .title-bar
+        .home-block-title.title Soon to Start Courses
+        a.more(href="#") View more »
+      .cards
+        //- 
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/hands-people-woman-working.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/hands-people-woman-working.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-251225.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //- 
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/hands-people-woman-working.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/hands-people-woman-working.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+        //-
+        .card
+          .title English Max Course (18 hrs/week)
+          a.img-area.has-read-more(href="#")
+            img.img(data-src="/static/pictures/pexels-photo-251225.jpg")
+            .price USD 300,000
+            +readMore
+          .text-area
+            .info
+              +icon('graduation-hat')
+              .text-area2 Connect English Language Institute- Mission Valley
+            .info
+              +icon('position')
+              .text-area2 SAN DIEGO, USA
+            .info
+              +icon('calendar')
+              .text-area2 20th Feb - 30th March, 2017
+            .info
+              +icon('user')
+              .text-area2 5 Spaces left
+  .big-block.home-block
+    .container
+      .pics.flex.justify-sb
+        a
+          img(data-src="/static/pictures/Layer103.jpg")
+        a
+          img(data-src="/static/pictures/Layer102.jpg")
+      .home-block-title Adventures
+      .carousel._1
+        .carousel-btn.left-btn
+          +icon('left-open-big')
+        .carousel-btn.right-btn
+          +icon('right-open-big')
+        .carousel-list-wrapper
+          .carousel-list
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Specially')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Business')
+            .clearfix
+      //-
+      .home-block-title Lifestyle
+      .carousel._1
+        .carousel-btn.left-btn
+          +icon('left-open-big')
+        .carousel-btn.right-btn
+          +icon('right-open-big')
+        .carousel-list-wrapper
+          .carousel-list
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Specially')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Business')
+            .clearfix
+      //-
+      .home-block-title Categories
+      .carousel._1
+        .carousel-btn.left-btn
+          +icon('left-open-big')
+        .carousel-btn.right-btn
+          +icon('right-open-big')
+        .carousel-list-wrapper
+          .carousel-list
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Specially')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Professional')
+            +carouselItem('/static/pictures/pexels-photo-110469copy.jpg', 'Business')
+            +carouselItem('/static/pictures/Layer15copy.jpg', 'Business')
+            .clearfix
+      //-
+      .home-block-title Countries
+      .carousel._2
+        .carousel-btn.left-btn
+          +icon('left-open-big')
+        .carousel-btn.right-btn
+          +icon('right-open-big')
+        .carousel-list-wrapper
+          .carousel-list
+            +carouselItem('/static/pictures/Layer7.jpg', 'London')
+            +carouselItem('/static/pictures/Layer8.jpg', 'Paris')
+            +carouselItem('/static/pictures/Layer9.jpg', 'Tokyo')
+            +carouselItem('/static/pictures/Layer10.jpg', 'Havana')
+            +carouselItem('/static/pictures/Layer11.jpg', 'Cape Town')
+            +carouselItem('/static/pictures/Layer10.jpg', 'Miami')
+            +carouselItem('/static/pictures/Layer10.jpg', 'Havana')
+            +carouselItem('/static/pictures/Layer11.jpg', 'Cape Town')
+            +carouselItem('/static/pictures/Layer10.jpg', 'Miami')
+            .clearfix
+  .subscribe-block.home-block
+    .title Subscribe to our mailing list
+    .title2 BE THE FIRST TO GET LATEST NEWS AND OFFERS!
+    form
+      //- fc is form control
+      input.input._fc(type="text" placeholder="Enter your email")
+      button.btn._fc() Subscribe!
+  include ../components/main-footer.pug

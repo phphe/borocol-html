@@ -1,0 +1,271 @@
+@import "../config/variables.scss";
+@import "../config/mixins.scss";
+// common helpers
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.no-bb {
+  @include noBb;
+}
+
+.col-sm {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  // xs extra small 特小屏幕 手机
+  @media(max-width: $small) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+// site helpers
+.icon:before {
+  vertical-align: middle;
+}
+
+.bg1 {
+  background-color: $bg1;
+}
+// global
+// components
+$formControlHeight: 55px;
+
+.select1 {
+  // icon
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff url('./img/icon-sort.png') no-repeat right center;
+  //
+  height: $formControlHeight;
+  line-height: $formControlHeight;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #888888;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+
+  &:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+  }
+}
+
+.btn1 {
+  @include noBb;
+  height: $formControlHeight;
+  line-height: $formControlHeight;
+  text-align: center;
+  background: #48CCCE;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #8BDBDA;
+  border-radius: 4px;
+}
+
+.has-read-more {
+  position: relative;
+  display: block;
+
+  .read-more {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      position: relative;
+      top: 3px;
+    }
+  }
+
+  &:hover {
+    .read-more {
+      visibility: visible;
+      background-color: rgba(125, 125, 125, 0.6);
+      color: #fff;
+    }
+  }
+}
+
+.card {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 20.37px 0.63px rgba(159, 159, 159, 0.31);
+
+  .title {
+    $height: 50px;
+    height: $height;
+    line-height: $height;
+    font-size: 21px;
+  }
+
+  .img-area {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+
+    .img {
+      width: 100%;
+    }
+  }
+
+  .text-area {
+    padding: 15px;
+    $iconW: 1.5em;
+
+    .info {
+      clear: both;
+    }
+
+    .icon {
+      display: inline-block;
+      width: $iconW;
+      text-align: center;
+      font-size: 18px;
+      float: left;
+
+      &:before {
+        vertical-align: baseline;
+      }
+    }
+
+    .text-area2 {
+      margin-left: $iconW;
+    }
+  }
+}
+
+.carousel {
+  position: relative;
+
+  .carousel-btn {
+    color: #7D7D7D;
+    cursor: pointer;
+    position: absolute;
+    font-size: 40px;
+  }
+
+  .left-btn {
+    right: 101%;
+    right: calc(100% + 25px);
+  }
+
+  .right-btn {
+    left: 101%;
+    left: calc(100% + 25px);
+  }
+}
+
+.carousel-list-wrapper {
+  overflow-x: hidden;
+}
+
+.carousel-list {
+  white-space: nowrap;
+  position: relative;
+}
+
+.carousel-item {
+  display: inline-block;
+  margin-right: 20px;
+
+  .text-area {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.slick-list{
+  .clearfix{
+    display: none;
+  }
+}
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #6f6f6f;
+    margin-right: 8px;
+    &.slick-active {
+      background: #48ccce;
+    }
+  }
+
+  button {
+    visibility: hidden;
+  }
+}
+
+
+.container {
+  padding: 0;
+  @media (min-width: 1530px) {
+    width: 1400px;
+  }
+  // xs extra small and small 特小屏幕 手机 和 小屏幕 平板
+  @media(max-width: $medium) {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
