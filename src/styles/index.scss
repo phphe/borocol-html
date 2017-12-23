@@ -386,10 +386,29 @@ $iconTealColor: #47CBCD;
 
 .subscribe-block {
   height: 445px;
-  background: url('~@/images/subscribe-background.jpg');
   text-align: center;
   color: rgb(255, 255, 255);
-
+  position: relative;
+  overflow: hidden;
+  // xs extra small 特小屏幕 手机
+  @media(max-width: $small) {
+    background: #4ababb;
+  }
+  .back-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 160%;
+    // md medium 中等屏幕 桌面显示器
+    @media(max-width: $large) and (min-width: $medium) {
+      width: 200%;
+    }
+    // sm small 小屏幕 平板
+    @media(max-width: $medium) and (min-width: $small) {
+      width: 250%;
+    }
+  }
   .title {
     font-size: 60px;
     font-weight: 300;
