@@ -23,6 +23,7 @@
     "connect-history-api-fallback": "^1.5.0",
     "copy-webpack-plugin": "^4.2.0",
     "css-loader": "^0.28.7",
+    "directory-tree": "^2.0.0",
     "eslint": "^4.11.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",
@@ -62,6 +63,7 @@
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
     "slick-carousel": "^1.8.1",
+    "tree-helper": "^1.0.2",
     "vanilla-lazyload": "^8.6.0"
   },
   "engines": {
