@@ -16,7 +16,8 @@ mixin dataRow
       .brand
         img(data-src="/static/images/brand.png")
       .tool-bar.pull-right
-        a(href="#") partner with us
+        //- end slash is required
+        a(href="/user-admin/CreateCourse/") partner with us
         .divider |
         +icon('user')
         a.mlm(href="#") Login
